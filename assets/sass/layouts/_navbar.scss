@@ -1,28 +1,27 @@
 .navbar {
-  background-color: aqua;
   height: 50px;
+  padding: 0px 100px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  background-color: bisque;
+
   &__menus {
     display: flex;
     flex-direction: row;
+
     li {
-      background: green;
       padding: 16px;
+      background: aqua;
     }
   }
+
   &__options {
     display: flex;
     flex-direction: row;
+
     button {
       margin-right: 16px;
     }
   }
-}
-
-.logo {
-  background: red;
-  margin-right: 40px;
-  padding: 16px;
 }

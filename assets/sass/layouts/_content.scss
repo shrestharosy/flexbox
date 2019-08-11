@@ -1,0 +1,21 @@
+.main {
+  height: 700px;
+  background: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    background: dimgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 50px;
+  }
+  
+  &__items {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -10,7 +10,7 @@ var paths = {
     src: "assets/sass/*.scss",
     dest: "dest"
   },
-  watchedFiles: ["assets/sass/*.scss", "assets/sass/**/*.scss"]
+  watchedFiles: ["assets/sass/*.scss", "assets/sass/**/*.scss", "index.html"]
 };
 
 function style() {

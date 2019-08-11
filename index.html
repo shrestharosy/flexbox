@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="dest/style.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Wando</li>
+    <nav class="navbar">
+      <div class="logo">Wando</div>
+      <ul class="navbar__menus">
         <li>Home</li>
         <li>About</li>
         <li>Services</li>
@@ -19,10 +19,18 @@
         <li>News</li>
         <li>Contact</li>
         <li>Image</li>
-        <li>Sign In</li>
-        <li>Search</li>
-        <li>Add To Cart</li>
       </ul>
+      <div class="navbar__options">
+        <button class="button button--rectangular button--sign-in">
+          Sign In
+        </button>
+        <button class="button button--round">
+          Search
+        </button>
+        <button class="button button--round">
+          Add
+        </button>
+      </div>
     </nav>
   </body>
 </html>

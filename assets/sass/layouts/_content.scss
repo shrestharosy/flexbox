@@ -1,21 +1,21 @@
 .main {
-  height: 700px;
-  background: burlywood;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &__content {
-    background: dimgray;
+  .content {
+    background: burlywood;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     line-height: 50px;
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+    }
   }
-  
-  &__items {
-    display: flex;
-    flex-direction: row;
+
+  &__background {
+    height: 700px;
+    margin-top: -80px;
+    background: url('/assets/images/undraw_review.svg') no-repeat center;
   }
 }

@@ -5,23 +5,36 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    line-height: 50px;
+    position: relative;
+    line-height: 20px;
 
     &__items {
       display: flex;
       flex-direction: row;
       color: $blue;
+      position: absolute;
+      top: 40px;
+
+      li {
+        padding: 14px;
+      }
     }
 
-    h1 {
+    &__title {
       font-family: 'BlackMelody';
-      font-size: 180px;
+      position: absolute;
+      top: 150px;
+    }
+
+    &__buttons {
+      position: absolute;
+      top: 250px;
     }
   }
 
   &__background {
     height: 700px;
-    margin-top: -80px;
+    margin-top: 150px;
     background: url('/assets/images/undraw_review.svg') no-repeat center;
   }
 }

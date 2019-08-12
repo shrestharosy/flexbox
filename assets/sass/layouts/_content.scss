@@ -29,6 +29,34 @@
     &__buttons {
       position: absolute;
       top: 250px;
+
+      .btn {
+        &--quote {
+          color: $white;
+          width: 150px;
+          @include gradient(
+            90deg,
+            #f08078,
+            #f17f79,
+            #f17f79,
+            #f07776,
+            #f06e73,
+            #ef6d72,
+            #ee656f,
+            #ef636d
+          );
+
+          &:before {
+            content: $arrow-right-icon;
+          }
+        }
+
+        &--play {
+          &:before {
+            content: $play-icon;
+          }
+        }
+      }
     }
   }
 

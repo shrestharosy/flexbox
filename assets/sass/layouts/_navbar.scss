@@ -1,11 +1,11 @@
 .navbar {
+  // background-color: bisque;
   height: 90px;
   padding: 0px 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: bisque;
   flex-wrap: wrap;
 
   &__menus {
@@ -22,8 +22,18 @@
     display: flex;
     flex-direction: row;
 
-    button {
+    .btn {
       margin-right: 16px;
+      &--search {
+        &:before {
+          content: $search-icon;
+        }
+      }
+      &--cart {
+        &:before {
+          content: $cart-icon;
+        }
+      }
     }
   }
   .logo {
@@ -34,7 +44,7 @@
     button {
       padding: 14px;
       margin-right: 20px;
-      @include linear-gradient();
+      @include gradient(90deg, #3391f8, #4ab5ec, #51c2ea, #5bd6e5);
     }
 
     &__text {

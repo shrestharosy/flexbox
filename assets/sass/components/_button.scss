@@ -2,19 +2,19 @@
   background-color: $white;
   border: 1px solid $gray;
   &--rectangular {
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
+    width: 118px;
+    height: 44px;
+    border-radius: 25px;
   }
 
   &--round {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 25px;
   }
 
   &--sign-in {
-    @include linear-gradient();
+    @include gradient(90deg, #3391f8, #4ab5ec, #51c2ea, #5bd6e5);
     color: $white;
   }
 }

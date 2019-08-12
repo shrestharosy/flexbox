@@ -1,7 +1,3 @@
-// @mixin linear-gradient($colors...) {
-//   background: linear-gradient(90deg, $colors);
-// }
-
-@mixin linear-gradient{
-    background: linear-gradient(90deg, #3391f8, #4ab5ec, #51c2ea, #5bd6e5);
-  }
+@mixin gradient($degree, $colors...) {
+  background: linear-gradient($degree, $colors);
+}

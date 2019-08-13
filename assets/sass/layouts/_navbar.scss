@@ -11,10 +11,28 @@
   &__menus {
     display: flex;
     flex-direction: row;
+    color: $light-gray;
+
+    &:after {
+      content: ‘’;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      border-width: 0 0 1px solid $notification;
+    }
 
     li {
       padding: 20px;
-      // background: aqua;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid $notification;
+      }
+
+      &.active {
+        border-bottom: 2px solid $notification;
+      }
     }
   }
 
@@ -27,6 +45,7 @@
       &--sign-in {
         &:before {
           content: $user-icon;
+          margin-right: 4px;
         }
       }
       &--search {

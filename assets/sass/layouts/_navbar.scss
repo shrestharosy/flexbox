@@ -24,14 +24,21 @@
 
     .btn {
       margin-right: 16px;
+      &--sign-in {
+        &:before {
+          content: $user-icon;
+        }
+      }
       &--search {
         &:before {
           content: $search-icon;
+          color: $light-gray;
         }
       }
       &--cart {
         &:before {
           content: $cart-icon;
+          color: $light-gray;
         }
       }
     }

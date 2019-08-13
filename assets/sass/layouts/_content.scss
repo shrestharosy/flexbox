@@ -14,14 +14,17 @@
       color: $blue;
       position: absolute;
       top: 40px;
+      letter-spacing: 2px;
+      font-weight: bold;
 
       li {
-        padding: 14px;
+        padding: 18px;
       }
     }
 
     &__title {
       font-family: 'BlackMelody';
+      color: $dark-blue;
       position: absolute;
       top: 150px;
     }

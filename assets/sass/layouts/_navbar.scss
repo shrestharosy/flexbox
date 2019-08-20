@@ -1,25 +1,98 @@
-.navbar {
-  // background-color: bisque;
-  height: 90px;
-  padding: 0px 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+// .navbar {
+//   // background-color: bisque;
+//   height: 90px;
+//   padding: 0px 200px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-wrap: wrap;
 
-  &__menus {
+//   &__menus {
+//     display: flex;
+//     flex-direction: row;
+//     color: $light-gray;
+
+//     &:after {
+//       content: ‘’;
+//       width: 100%;
+//       position: absolute;
+//       left: 0;
+//       bottom: 1px;
+//       border-width: 0 0 1px solid $notification;
+//     }
+
+//     li {
+//       padding: 20px;
+
+//       &:hover {
+//         cursor: pointer;
+//         border-bottom: 2px solid $notification;
+//       }
+
+//       &.active {
+//         border-bottom: 2px solid $notification;
+//       }
+//     }
+//   }
+
+//   &__options {
+//     display: flex;
+//     flex-direction: row;
+
+//     .btn {
+//       margin-right: 16px;
+//       &--sign-in {
+//         &:before {
+//           content: $user-icon;
+//           margin-right: 4px;
+//         }
+//       }
+//       &--search {
+//         &:before {
+//           content: $search-icon;
+//           color: $light-gray;
+//         }
+//       }
+//       &--cart {
+//         &:before {
+//           content: $cart-icon;
+//           color: $light-gray;
+//         }
+//       }
+//     }
+//   }
+//   .logo {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+
+//     button {
+//       padding: 14px;
+//       margin-right: 20px;
+//       @include gradient(90deg, #3391f8, #4ab5ec, #51c2ea, #5bd6e5);
+//     }
+
+//     &__text {
+//       font-size: 30px;
+//     }
+//   }
+// }
+
+.bootstrap {
+  .navbar {
+    height: 60px;
+    background: $purple;
     display: flex;
     flex-direction: row;
-    color: $light-gray;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
 
-    &:after {
-      content: ‘’;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      bottom: 1px;
-      border-width: 0 0 1px solid $notification;
+    &__menus {
+      display: flex;
+      flex-direction: row;
+      color: $gray;
     }
 
     li {
@@ -27,54 +100,12 @@
 
       &:hover {
         cursor: pointer;
-        border-bottom: 2px solid $notification;
+        color: $white;
       }
 
       &.active {
-        border-bottom: 2px solid $notification;
+        color: $white;
       }
-    }
-  }
-
-  &__options {
-    display: flex;
-    flex-direction: row;
-
-    .btn {
-      margin-right: 16px;
-      &--sign-in {
-        &:before {
-          content: $user-icon;
-          margin-right: 4px;
-        }
-      }
-      &--search {
-        &:before {
-          content: $search-icon;
-          color: $light-gray;
-        }
-      }
-      &--cart {
-        &:before {
-          content: $cart-icon;
-          color: $light-gray;
-        }
-      }
-    }
-  }
-  .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    button {
-      padding: 14px;
-      margin-right: 20px;
-      @include gradient(90deg, #3391f8, #4ab5ec, #51c2ea, #5bd6e5);
-    }
-
-    &__text {
-      font-size: 30px;
     }
   }
 }

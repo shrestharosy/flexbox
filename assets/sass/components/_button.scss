@@ -1,10 +1,25 @@
 .btn {
   background-color: $white;
   border: 1px solid $light-gray;
+  
   &--rectangular {
     width: 118px;
     height: 44px;
     border-radius: 25px;
+  }
+
+  &--square {
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid $white;
+    background: $purple;
+
+    &:after{
+      content: 'B';
+      color: $white;
+      font-size: 22px;
+    }
   }
 
   &--round {

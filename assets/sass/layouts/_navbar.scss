@@ -93,18 +93,36 @@
       display: flex;
       flex-direction: row;
       color: $gray;
+
+      li {
+        padding: 20px;
+
+        &:hover {
+          cursor: pointer;
+          color: $white;
+        }
+
+        &.active {
+          color: $white;
+        }
+      }
     }
 
-    li {
-      padding: 20px;
+    &__options {
 
-      &:hover {
-        cursor: pointer;
-        color: $white;
+      display: flex;
+      .btn--github {
+        &:before {
+          content: $github-icon;
+          color: $light-gray;
+        }
       }
 
-      &.active {
-        color: $white;
+      .btn--twitter {
+        &:before {
+          content: $twitter-icon;
+          color: $light-gray;
+        }
       }
     }
   }
